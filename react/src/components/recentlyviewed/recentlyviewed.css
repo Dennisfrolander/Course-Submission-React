@@ -1,0 +1,33 @@
+.recently-viewed-section {
+  max-width: 1300px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.clear-all-recently-viewed {
+  position: absolute;
+  top: 24px;
+  left: 90%;
+  color: #5799ef;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  width: auto;
+}
+
+#recently-viewed-text {
+  color: white;
+  font-size: 17px;
+  font-style: italic;
+  padding: 0 0 0 1em;
+}
+
+.clear-all-recently-viewed:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1000px) {
+  .clear-all-recently-viewed {
+    left: 80%;
+  }
+}

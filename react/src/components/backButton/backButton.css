@@ -1,0 +1,13 @@
+.back-home {
+  color: #f5c518;
+  margin: 3% 0 0 5%;
+  font-size: 1.1em;
+  border: solid 1px #f5c518;
+}
+
+.back-home:hover {
+  color: #f5c518;
+  border: solid 1px #f5c518;
+  transform: scale(1.02);
+  opacity: 0.7;
+}

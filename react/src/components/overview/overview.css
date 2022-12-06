@@ -1,0 +1,57 @@
+.overview-section {
+  max-width: 1300px;
+}
+
+.overview-text {
+  color: white;
+  padding: 15px;
+}
+
+.overview-title {
+  text-align: center;
+  color: wheat;
+  font-size: 2vw;
+  padding-bottom: 1em;
+}
+
+.overview-vote-average {
+  color: white;
+  padding: 1em;
+}
+
+.overview-star {
+  color: #ffd700;
+  margin: 0px 5px 4px 5px;
+}
+
+.overview-users {
+  color: #ffd700;
+}
+
+.overview-headers {
+  padding-left: 0.5em;
+  color: #ffd700;
+}
+
+.overview-releasedate {
+  padding: 1em;
+  color: white;
+}
+
+.overview-readmore {
+  text-decoration: none;
+  padding: 1em;
+  color: #5799ef;
+}
+
+.overview-readmore:hover {
+  opacity: 0.7;
+  text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 575px) {
+  .overview-title {
+    font-size: 30px;
+    padding: 15px;
+  }
+}

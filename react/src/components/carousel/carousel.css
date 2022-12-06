@@ -1,0 +1,48 @@
+.carousel-section {
+  max-width: 1300px;
+  margin: 30px auto;
+}
+
+body {
+  background-color: black;
+}
+
+.popular-star-container {
+  display: flex;
+  align-items: center;
+}
+
+.popular-star-icon {
+  color: #ffd700;
+  margin: 0px 5px 5px 5px;
+}
+
+.popular-star-rating-text {
+  color: white;
+}
+
+.popular-movie-title {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.popular-title {
+  color: #f5c518;
+  padding: 17px;
+  font-size: 2em;
+}
+
+.img-gallery:hover {
+  transform: scale(1.05);
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.dZkckO {
+  top: calc(35% - 17.5px);
+}
+.bBfHpH {
+  top: calc(35% - 17.5px) !important;
+}
