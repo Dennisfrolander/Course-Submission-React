@@ -41,8 +41,29 @@ body {
 }
 
 .dZkckO {
-  top: calc(35% - 17.5px);
+  top: calc(35% - 17.5px) !important;
 }
 .bBfHpH {
   top: calc(35% - 17.5px) !important;
+}
+
+.jjfwLM {
+  position: relative;
+}
+
+.watch-popular-trailer {
+  position: absolute;
+  left: 5px;
+  bottom: 0%;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.icon-popular-play {
+  color: grey;
+}
+
+.trailer-text {
+  text-decoration: none;
+  color: #5799ef;
 }

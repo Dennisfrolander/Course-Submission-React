@@ -1,27 +1,30 @@
 import React from "react";
 import Carousel from "better-react-carousel";
 import "./carousel.css";
-import { BsStarFill } from "react-icons/bs";
+import { BsStarFill, BsFillPlayFill } from "react-icons/bs";
 import HeroTitle from "../Hero_Title/Hero_Title";
 import { Link } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 import Spinner from "../spinner/spinner";
 import Error from "../Error/Error";
 
-const QUERY_ALL_USERS = gql`
+const QUERY_ALL_MOVIES = gql`
   query GetAllPopularMovies {
     PopularMovies {
       id
       poster_path
       title
       vote_average
+      trailers {
+        id
+        trailer_path
+      }
     }
   }
 `;
 
 const Carouseltest = (props) => {
-  const { data, loading, error } = useQuery(QUERY_ALL_USERS);
-  console.log(data);
+  const { data, loading, error } = useQuery(QUERY_ALL_MOVIES);
   if (loading) {
     return <Spinner />;
   }
@@ -47,9 +50,6 @@ const Carouseltest = (props) => {
             <Carousel.Item key={id}>
               <Link
                 to={`/movies/${id}`}
-                // href={`https://www.themoviedb.org/movie/${id}`}
-                // target="_blank"
-                // rel="noopener noreferrer"
                 onClick={() => props.handleVisitedClick(movie)}
               >
                 <img
@@ -65,6 +65,19 @@ const Carouseltest = (props) => {
                   <span className="popular-star-rating-text">
                     {vote_average === null ? "No votes" : vote_average}
                   </span>
+                </div>
+                <div className="watch-popular-trailer">
+                  <span className="icon-popular-play">
+                    <BsFillPlayFill size={20} />
+                  </span>
+                  <a
+                    className="trailer-text"
+                    href={`https://www.youtube.com/watch?v=${movie.trailers[0].trailer_path}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Trailer
+                  </a>
                 </div>
                 <h2 className="popular-movie-title">{title}</h2>
               </div>

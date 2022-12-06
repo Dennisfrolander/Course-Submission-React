@@ -1,9 +1,14 @@
-import { PopularMovies } from "../fakeData.js";
+import { PopularMovies } from "../dataBase/popularMovies.js";
+import { Trailers } from "../dataBase/trailers.js";
 
 export const resolvers = {
   Query: {
-    PopularMovies() {
-      return PopularMovies;
+    PopularMovies: () => PopularMovies,
+    Trailers: () => Trailers,
+  },
+  PopularMovie: {
+    trailers: (parent) => {
+      return Trailers.filter((trailer) => trailer.PopularMovies === parent.id);
     },
   },
 };
