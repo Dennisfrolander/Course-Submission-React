@@ -3,15 +3,17 @@
 ## Hur man startar appen: 
 
 ***Det är viktigt att starta graphQL servern innan du startar react-appen***
-
+### Server:
 cd server\
 npm install / npm install --force\
 npm start
-
+#
+### App:
 cd client_react\
 npm install / npm install --force\
 npm start
 
+#
 ### Få fram alla populära filmer:
 
 ```
