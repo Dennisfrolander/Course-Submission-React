@@ -2,7 +2,7 @@
 
 ## Hur man startar appen: 
 
-***Det är viktigt att starta servern innan man startar react-appen***
+***Det är viktigt att starta graphQL servern innan man startar react-appen***
 
 cd server\
 npm install / npm install --force\
