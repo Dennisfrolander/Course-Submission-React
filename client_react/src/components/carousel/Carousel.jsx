@@ -40,7 +40,6 @@ const Carouseltest = (props) => {
         rows={1}
         gap={20}
         loop
-        //showDots
         autoplay={8000}
         breakpoint={600}
       >
